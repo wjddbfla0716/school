@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>다양한 선택자</title>
+    <style>
+      /*section p {
+        color: red;
+        font-size: 50px;
+      }*/
+      section > p {
+        color: red;
+        font-size: 50px;
+      }
+      .box1 {
+        width: 500px;
+        height: 200px;
+        margin: 30px auto;
+        background-color: #f7a072;
+        text-align: center;
+      }
+
+      .box2 {
+        width: 500px;
+        height: 200px;
+        margin: 30px auto;
+        background-color: #b5e2fa;
+        text-align: center;
+      }
+      .box2 > input {
+        padding: 10px 30px;
+        border: none;
+        color: white;
+        background-color: #0fa3b1;
+        border-radius: 15px;
+        font-size: 50px;
+        margin-top: 50px;
+        box-shadow: 5px 5px 10px #15616d;
+      }
+      h1 + p {
+        background-color: aqua;
+        color: red;
+        font-size: 50px;
+      }
+      /*h1 ~ p {
+        background-color: aqua;
+        color: red;
+        font-size: 50px;
+      }*/
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>경북소프트웨어고등학교</h1>
+      <p>1학년 전공과목</p>
+      <p>응용프로그래밍 개발</p>
+      <article>
+        <p><span>HTML</span>로 뼈대 만들기</p>
+        <p><span>CSS</span>로 옷 입히기</p>
+      </article>
+    </section>
+    <div class="box1">
+      <input type="button" value="버튼" size="500px" />
+    </div>
+    <div class="box2">
+      <input type="button" value="버튼" />
+    </div>
+  </body>
+</html>

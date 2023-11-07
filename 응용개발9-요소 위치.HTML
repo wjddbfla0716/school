@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>응용개발9</title>
+    <style>
+      div {
+        width: 300px;
+        height: 50px;
+        border: 1px solid black;
+        line-height: 50px;
+        background-color: yellow;
+        text-align: center;
+      }
+
+      section {
+        position: relative;
+        width: 700px;
+        height: 200px;
+        background-color: blanchedalmond;
+      }
+      .po_relative {
+        position: relative;
+        top: 30px;
+        left: 50px;
+        opacity: 0.8;
+        background-color: red;
+      }
+      .po_absolute {
+        position: absolute;
+        top: 30px;
+        right: 50px;
+        text-align: center;
+        background-color: red;
+      }
+      .po_fixed {
+        position: fixed;
+        width: 500px;
+        top: 30px;
+        opacity: 0.8;
+        background-color: red;
+      }
+      body {
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>첫번째 요소</div>
+      <div class="po_relative">두번째 요소</div>
+      <div>세번째 요소</div>
+    </section>
+    <br />
+    <section>
+      <div>첫번째 요소</div>
+      <div class="po_absolute">두번째 요소</div>
+      <div>세번째 요소</div>
+    </section>
+    <br />
+    <section style="height: 500px">
+      <div>첫번째 요소</div>
+      <div class="po_fixed">두번째 요소</div>
+      <div>세번째 요소</div>
+      <div>네번째 요소</div>
+      <div>다섯번째 요소</div>
+      <div>여섯번째 요소</div>
+      <div>일곱번째 요소</div>
+      <div>여덟번째 요소</div>
+      <div>아홉번째 요소</div>
+      <div>열번째 요소</div>
+    </section>
+  </body>
+</html>

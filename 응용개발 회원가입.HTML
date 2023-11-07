@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+  </head>
+  <body>
+    <form>
+      <fieldset style="width: 450px">
+        <legend>사용자 정보</legend>
+        <ul>
+          <li>
+            <label for="User-id"
+              >아이디 <input type="text" id="User-id"
+            /></label>
+          </li>
+          <li>
+            <label for="User-email">이메일 <input type="email" /></label>
+          </li>
+          <li>
+            <label for="u-id"
+              >비밀번호 <input type="password" id="User-pw"
+            /></label>
+          </li>
+          <li>
+            <label for="u-id"
+              >비밀번호 확인 <input type="password" id="User-pw"
+            /></label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset style="width: 450px">
+        <legend>이벤트와 새로운 소식</legend>
+        <label><input type="radio" name="mail" checked />메일 수신</label>
+        <label><input type="radio" name="mail" />메일 수신 안 함</label>
+      </fieldset>
+      <br />
+      <fieldset style="width: 450px">
+        <legend>알게된 경로(복수 응답 사능)</legend>
+        <label><input type="checkbox" value="internet" />인터넷 검색</label>
+        <label><input type="checkbox" value="recommand" />친구 추천</label>
+        <label><input type="checkbox" value="sns" />SNS 광고</label>
+        <label><input type="checkbox" value="etc" />기타</label>
+      </fieldset>
+      <br />
+      <input type="submit" value="제출하기" />
+      <input type="reset" value="취소" />
+    </form>
+    <br />
+    <form>
+      <fieldset style="width: 450px">
+        <legend>주문하기</legend>
+        <p><b>주문할 상품을 선택해주세요.</b></p>
+        <label
+          ><input type="checkbox" value="TGS" />치약선물세트<input
+            type="number"
+            max="5"
+            min="0"
+          />개 </label
+        ><font size="1">(최대 5개)</font><br />
+        <label
+          ><input type="checkbox" value="FGS" />과일선물세트<input
+            type="number"
+            max="10"
+            min="0"
+            step="2"
+          />개 </label
+        ><font size="1">(2개 1세트, 최대 10개)</font>
+        <p><b>포장 선택</b></p>
+        <label><input type="radio" name="bo" checked />보자기 포장</label>
+        <label><input type="radio" name="bo" />보자기 포장 안 함</label>
+      </fieldset>
+      <br />
+      <fieldset style="width: 450px">
+        <legend>배송 정보</legend>
+        <ul>
+          <li>
+            <label
+              >이름<input
+                type="text"
+                id="u-name"
+                placeholder="공백 없이 입력하세요"
+            /></label>
+          </li>
+          <li>
+            <label
+              >연락처<input
+                type="tel"
+                id="u-tel"
+                placeholder="-를 빼고 입력하세요"
+            /></label>
+          </li>
+          <li>
+            <label
+              >이메일<input type="email" id="User-email" />@<select>
+                <option value="naver.com">naver.com</option>
+                <option value="gmail.com">gmail.com</option>
+                <option value="kakao.com">kakao.com</option>
+                <option value="daum.net">daum.net</option>
+              </select></label
+            >
+          </li>
+          <li>
+            <label>박스 이미지 디자인<input type="file" /></label>
+          </li>
+          <li>
+            <label
+              >희망 배송일<input type="date" min="2023-09-01" max="2023-09-10"
+            /></label>
+          </li>
+          <li>
+            <label
+              >배송 메세지<br /><textarea
+                id="memo"
+                cols="50"
+                rows="3"
+              ></textarea>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <br />
+      <input type="submit" value="제출하기" />
+      <input type="reset" value="다시 작성" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>응용개발2</title>
+      </head>
+    <style>
+      table {
+        border: 1px solid #ff0000;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      td,
+      th {
+        border: 1px dotted #0000ff;
+        padding: 15px;
+      }
+    </style>
+    <table>
+      <caption>
+        과일 선물세트 상품 구성
+      </caption>
+      <colgroup>
+        <col style ="background-color: #b6ffff" ></style>
+        <col>
+        <col span="2" style ="background-color: #ffff00" ></style>
+        <col style ="background-color: #ff0000" ></style>
+      </colgroup>
+      <thead>
+        <tr>
+          <th>용도</th>
+          <th>중량</th>
+          <th>최소개수</th>
+          <th>최대개수</th>
+          <th>가격</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">선물용</td>
+          <td>3kg</td>
+          <td>11개</td>
+          <td>16개</td>
+          <td>35,000원</td>
+        </tr>
+        <tr>
+          <td>5kg</td>
+          <td>18개</td>
+          <td>26개</td>
+          <td>52,000원</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>가정용</td>
+          <td>3kg</td>
+          <td colspan="2">13개</td>
+          <td>30,000원</td>
+        </tr>
+      </tfoot>
+    </table>
+</html>
+    
